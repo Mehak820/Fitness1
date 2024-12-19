@@ -1,0 +1,152 @@
+/* Stylesheet */
+
+:root {
+    --maxDimension: 800px;
+    --maxHeight: 900px;
+    --boxUnitSize: calc(var(--maxDimension)); /* Fixed nested variable */
+    --box1: var(--boxUnitSize);
+    --box2: calc(var(--boxUnitSize) * 2);
+    --box3: calc(var(--boxUnitSize) * 4);
+}
+
+* { /* Replaced invalid selector `.` with universal selector `*` */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.parent-col {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("http://getwallpapers.com/wallpaper/full/7/5/c/53625.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffd900e4;
+    background-size: cover;
+}
+
+.qr-code {
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title-premier {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffd900e4;
+}
+
+.title-personal-training {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 0;
+    border-top: 2px solid #ffd900e4;
+    border-bottom: 2px solid #ffd900e4;
+    text-transform: uppercase;
+    padding: 5px 0;
+    text-align: center;
+    color: #ffd900e4;
+}
+
+.top-nav {
+    display: flex;
+    float: right;
+    gap: 20px;
+    margin-top: -2.8em;
+    margin-right: 1em;
+    text-transform: uppercase;
+}
+
+.top-nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.top-nav a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.main-session {
+    perspective: 1000px;
+}
+
+.apps-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 65px;
+    transition: all 0.3s ease-in-out;
+    float: left;
+}
+
+.apps-logo a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.apps-logo a img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.apps-logo a:hover img {
+    transform: scale(0.7);
+}
+
+.apps-logo a:hover {
+    text-decoration: underline;
+}
+
+.Redefining {
+    text-align: center;
+    padding: 180px 0 250px;
+    margin-right: 700px;
+}
+
+.Fitness-experience {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px #f2c700;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.the-ft-exp {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px 0 0;
+    margin-left: 130px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Other styles remain consistent, and no critical syntax issues detected below */
+
